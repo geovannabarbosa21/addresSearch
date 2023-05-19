@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="author" content= "Geovanna">
+  <title>Busca CEP</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/road-map-line.png" rel="icon">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+      <h1 class="logo mx-auto mt-2" style="justify-content: baseline;"><a href="index.html">Busca CEP <span>.</span> <i class="ri-road-map-line" style="padding-left: 6px;"></i></a></h1>
+    </div>
+  </header>
+
+  <!-- Section for input in data -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+       <form>
+      <div class="form-group col-xl-6 mx-auto">
+        <h3 style="color: white;">Coloque seu cep aqui<span></span></h3>
+        <input type="text" class="form-control" aria-describedby="emailHelp" maxlength="8"
+          placeholder="Seu Cep" oninput="buscarCep(this.value)" id="cep">
+        <small id="emailHelp" style="color: white;" class="form-text text-muted">Encontre seu endereço inserindo seu CEP.</small>
+      </div>
+      <div class="form-group mt-2 col-xl-6 mx-auto">
+        <h3 style="color: white;">Cidade<span></span></h3>
+        <input type="text" class="form-control" disabled placeholder="Cidade...." id="cidade" >
+      </div>
+    
+      <div class="form-group mt-2 col-xl-6 mx-auto">
+        <h3 style="color: white;">Bairro<span></span></h3>
+        <input type="text" class="form-control" disabled placeholder="Bairro...." id="bairro" >
+      </div>
+      <div class="form-group mt-2 col-xl-6 mx-auto">
+        <h3 style="color: white;">Logradouro<span></span></h3>
+        <input type="text" class="form-control" disabled placeholder="Logradouro...." id="endereco" >
+      </div>
+
+      <div class="form-group mt-2 col-xl-6 mx-auto">
+        <h3 style="color: white;">Sigla<span></span></h3>
+        <input type="text" class="form-control" placeholder="Sigla...." disabled id="sigla" >
+      </div>
+
+    <!-- Button for refresh of index -->
+    </form>
+      </div>
+      <a href="index.html">
+      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-refresh-line"></i>
+            <h3>Atualizar Busca</h3>
+          </div>
+        </div>
+      </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!--Footer -->
+  <footer id="footer">
+  
+
+    <div class="container">
+
+      <div class="credits">
+        Designed by <a href="index.html">Geovanna Barbosa</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
